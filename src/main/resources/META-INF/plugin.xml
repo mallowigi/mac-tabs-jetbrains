@@ -1,27 +1,26 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>cat.dcat.jbplug.mactabbing</id>
-    <name>IDEA Mac Tabbing</name>
-    <vendor>wdcat</vendor>
+    <name>Mac Tab Support</name>
+    <vendor email="elior@material-theme.com" url="https://github.com/wDCat">AtomMaterial and wDCat</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
-        <group id="MacNativeTabbingHelper" text="Tabbing"
-                popup="true">
+        <group id="MacNativeTabbingHelper" text="Tabbing" popup="true">
             <add-to-group group-id="WindowMenu" anchor="before" relative-to-action="ActiveToolwindowGroup"/>
             <action id="NativeTabbingSelectPreviousTab" text="Show Previous Window Tab"
-                    class="cat.dcat.jbplug.mactabbing.actions.SelectPreviousTab" />
+                    class="cat.dcat.jbplug.mactabbing.actions.SelectPreviousTab"/>
             <action id="NativeTabbingSelectNextTab" text="Show Next Window Tab"
-                    class="cat.dcat.jbplug.mactabbing.actions.SelectNextTab" />
+                    class="cat.dcat.jbplug.mactabbing.actions.SelectNextTab"/>
             <action id="NativeTabbingMoveTabToNewWindow" text="Move Window Tab to New Window"
-                    class="cat.dcat.jbplug.mactabbing.actions.MoveTabToNewWindow" />
+                    class="cat.dcat.jbplug.mactabbing.actions.MoveTabToNewWindow"/>
             <action id="NativeTabbingMergeAllWindows" text="Merge All Windows"
-                    class="cat.dcat.jbplug.mactabbing.actions.MergeAllWindows" />
+                    class="cat.dcat.jbplug.mactabbing.actions.MergeAllWindows"/>
             <action id="NativeTabbingToggleTabBar" text="Toggle Window Tabs Bar"
-                    class="cat.dcat.jbplug.mactabbing.actions.ToggleTabBar" />
+                    class="cat.dcat.jbplug.mactabbing.actions.ToggleTabBar"/>
             <action id="NativeTabbingToggleTabOverview" text="Tabs Bar Overview"
-                    class="cat.dcat.jbplug.mactabbing.actions.ToggleTabOverview" />
+                    class="cat.dcat.jbplug.mactabbing.actions.ToggleTabOverview"/>
         </group>
     </actions>
 </idea-plugin>

@@ -1,7 +1,9 @@
-# IDEA Mac Tabbing
+# Mac Tab Support
 
 <!-- Plugin description -->
-Add Mac tabbing options to Jetbrains IDEs:
+Based on the plugin by [wDCat](https://github.com/wDCat) available at <https://github.com/wDCat/idea-mac-tabbing>
+
+Add Mac tabbing options to JetBrains IDEs:
 - Show Previous Window Tab
 - Show Next Window Tab
 - Move Window Tab to New Window
@@ -11,19 +13,11 @@ Add Mac tabbing options to Jetbrains IDEs:
 
 ![Preview](img/preview.png)
 
-Tested with CLion 2021.3.4 && Intellij 2021.3.2
 <!-- Plugin description end -->
-
-## Installation
-  
-- Manually:
-
-  Download the [latest release](https://github.com/wDCat/idea-mac-tabbing/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
-
-- Or build from source if you like.
 
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
+
+Icon by <svgrepo.com>

@@ -1,1 +1,1 @@
-rootProject.name = "IDEA Mac Tabbing"
+rootProject.name = "Mac Tab Support"
