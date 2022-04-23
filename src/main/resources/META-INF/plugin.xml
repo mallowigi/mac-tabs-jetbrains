@@ -2,8 +2,8 @@
 <idea-plugin>
     <id>cat.dcat.jbplug.mactabbing</id>
     <name>Mac Tab Support</name>
-    <vendor email="elior@material-theme.com" url="https://github.com/wDCat">AtomMaterial and wDCat</vendor>
-
+    <vendor email="elior@material-theme.com" url="https://github.com/mallowigi">AtomMaterial</vendor>
+    <version>1.0.0</version>
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
