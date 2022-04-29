@@ -11,7 +11,7 @@ Add Mac tabbing options to JetBrains IDEs:
 - Toggle Window Tabs Bar
 - Tabs Bar Overview
 
-![Preview](img/preview.png)
+<img alt="Preview" height="312" src="https://raw.githubusercontent.com/mallowigi/mac-tabs-jetbrains/main/img/preview.png" width="502"/>
 
 <!-- Plugin description end -->
 
