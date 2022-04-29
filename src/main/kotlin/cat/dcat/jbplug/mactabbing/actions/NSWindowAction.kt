@@ -4,8 +4,15 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.ui.mac.foundation.Foundation
 
-/** Created by DCat on 2022/3/22. */
-abstract class NSWindowAction(val selector: String, val args: Any? = null) : AnAction() {
+/**
+ * Call Foundation's native window actions
+ *
+ * @property selector method name
+ * @property args optional args
+ */
+abstract class NSWindowAction(private val selector: String, private val args: Any? = null) : AnAction() {
+
+  /** Call Foundation's native window actions on NSApplication. */
   override fun actionPerformed(event: AnActionEvent) {
     val app = Foundation.invoke("NSApplication", "sharedApplication")
     val mainWindow = Foundation.invoke(app, Foundation.createSelector("mainWindow"))
@@ -18,7 +25,6 @@ abstract class NSWindowAction(val selector: String, val args: Any? = null) : AnA
     )
   }
 
-  override fun isDumbAware(): Boolean {
-    return true
-  }
+  /** Allows running in dumb mode. */
+  override fun isDumbAware(): Boolean = true
 }

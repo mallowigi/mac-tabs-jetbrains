@@ -1,9 +1,9 @@
 # Mac Tab Support
 
 <!-- Plugin description -->
-Based on the plugin by [wDCat](https://github.com/wDCat) available at <https://github.com/wDCat/idea-mac-tabbing>
 
-Add Mac tabbing options to JetBrains IDEs:
+Add Mac tabbing management to JetBrains IDEs:
+
 - Show Previous Window Tab
 - Show Next Window Tab
 - Move Window Tab to New Window
@@ -12,6 +12,8 @@ Add Mac tabbing options to JetBrains IDEs:
 - Tabs Bar Overview
 
 <img alt="Preview" height="312" src="https://raw.githubusercontent.com/mallowigi/mac-tabs-jetbrains/main/img/preview.png" width="502"/>
+
+Based on the plugin by [wDCat](https://github.com/wDCat) available at <https://github.com/wDCat/idea-mac-tabbing>
 
 <!-- Plugin description end -->
 

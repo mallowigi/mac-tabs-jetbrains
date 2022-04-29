@@ -1,25 +1,37 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>cat.dcat.jbplug.mactabbing</id>
     <name>Mac Tab Support</name>
     <vendor email="elior@material-theme.com" url="https://github.com/mallowigi">AtomMaterial</vendor>
-    <version>1.0.0</version>
+    <version>1.2.0</version>
     <depends>com.intellij.modules.platform</depends>
 
-    <actions>
-        <group id="MacNativeTabbingHelper" text="Tabbing" popup="true">
-            <add-to-group group-id="WindowMenu" anchor="before" relative-to-action="ActiveToolwindowGroup"/>
-            <action id="NativeTabbingSelectPreviousTab" text="Show Previous Window Tab"
+    <actions resource-bundle="messages.MacTabBundle">
+        <group id="MacNativeTabbingHelper" popup="true" icon="AllIcons.Actions.OpenNewTab">
+            <add-to-group group-id="MainToolBar"/>
+            <add-to-group group-id="NavBarToolBar"/>
+            <add-to-group group-id="FileMenu"
+                          anchor="after"
+                          relative-to-action="FilePropertiesGroup"/>
+            <add-to-group group-id="WindowMenu"
+                          anchor="before"
+                          relative-to-action="ActiveToolwindowGroup"/>
+            <action id="NativeTabbingSelectPreviousTab"
+                    icon="AllIcons.Actions.Back"
                     class="cat.dcat.jbplug.mactabbing.actions.SelectPreviousTab"/>
-            <action id="NativeTabbingSelectNextTab" text="Show Next Window Tab"
+            <action id="NativeTabbingSelectNextTab"
+                    icon="AllIcons.Actions.Forward"
                     class="cat.dcat.jbplug.mactabbing.actions.SelectNextTab"/>
-            <action id="NativeTabbingMoveTabToNewWindow" text="Move Window Tab to New Window"
+            <action id="NativeTabbingMoveTabToNewWindow"
+                    icon="AllIcons.Actions.MoveToWindow"
                     class="cat.dcat.jbplug.mactabbing.actions.MoveTabToNewWindow"/>
-            <action id="NativeTabbingMergeAllWindows" text="Merge All Windows"
+            <action id="NativeTabbingMergeAllWindows"
+                    icon="AllIcons.Actions.GroupBy"
                     class="cat.dcat.jbplug.mactabbing.actions.MergeAllWindows"/>
-            <action id="NativeTabbingToggleTabBar" text="Toggle Window Tabs Bar"
+            <action id="NativeTabbingToggleTabBar"
+                    icon="AllIcons.General.ProjectTab"
                     class="cat.dcat.jbplug.mactabbing.actions.ToggleTabBar"/>
-            <action id="NativeTabbingToggleTabOverview" text="Tabs Bar Overview"
+            <action id="NativeTabbingToggleTabOverview"
+                    icon="AllIcons.General.ProjectStructure"
                     class="cat.dcat.jbplug.mactabbing.actions.ToggleTabOverview"/>
         </group>
     </actions>
