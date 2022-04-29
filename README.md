@@ -4,12 +4,12 @@
 
 Add Mac tabbing management to JetBrains IDEs:
 
-- Show Previous Window Tab
-- Show Next Window Tab
-- Move Window Tab to New Window
-- Merge All Windows
-- Toggle Window Tabs Bar
-- Tabs Bar Overview
+- Show Previous Window Tab `⌃⇧←`
+- Show Next Window Tab `⌃⇧→`
+- Move Window Tab to New Window `⌃⇧N`
+- Merge All Windows `⌃⇧M`
+- Toggle Window Tabs Bar `⌃⇧T`
+- Tabs Bar Overview `⌃Tab`
 
 <img alt="Preview" height="312" src="https://raw.githubusercontent.com/mallowigi/mac-tabs-jetbrains/main/img/preview.png" width="502"/>
 

@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>cat.dcat.jbplug.mactabbing</id>
-    <name>Mac Tab Support</name>
+    <name>MacOS Tab Management</name>
     <vendor email="elior@material-theme.com" url="https://github.com/mallowigi">AtomMaterial</vendor>
     <version>1.2.0</version>
     <depends>com.intellij.modules.platform</depends>
@@ -17,22 +17,40 @@
                           relative-to-action="ActiveToolwindowGroup"/>
             <action id="NativeTabbingSelectPreviousTab"
                     icon="AllIcons.Actions.Back"
-                    class="cat.dcat.jbplug.mactabbing.actions.SelectPreviousTab"/>
+                    class="cat.dcat.jbplug.mactabbing.actions.SelectPreviousTab">
+                <keyboard-shortcut first-keystroke="control shift LEFT" keymap="Mac OS X" replace-all="true"/>
+                <keyboard-shortcut first-keystroke="control shift LEFT" keymap="Mac OS X 10.5+" replace-all="true"/>
+            </action>
             <action id="NativeTabbingSelectNextTab"
                     icon="AllIcons.Actions.Forward"
-                    class="cat.dcat.jbplug.mactabbing.actions.SelectNextTab"/>
+                    class="cat.dcat.jbplug.mactabbing.actions.SelectNextTab">
+                <keyboard-shortcut first-keystroke="control shift RIGHT" keymap="Mac OS X" replace-all="true"/>
+                <keyboard-shortcut first-keystroke="control shift RIGHT" keymap="Mac OS X 10.5+" replace-all="true"/>
+            </action>
             <action id="NativeTabbingMoveTabToNewWindow"
                     icon="AllIcons.Actions.MoveToWindow"
-                    class="cat.dcat.jbplug.mactabbing.actions.MoveTabToNewWindow"/>
+                    class="cat.dcat.jbplug.mactabbing.actions.MoveTabToNewWindow">
+                <keyboard-shortcut first-keystroke="control shift N" keymap="Mac OS X" replace-all="true"/>
+                <keyboard-shortcut first-keystroke="control shift N" keymap="Mac OS X 10.5+" replace-all="true"/>
+            </action>
             <action id="NativeTabbingMergeAllWindows"
                     icon="AllIcons.Actions.GroupBy"
-                    class="cat.dcat.jbplug.mactabbing.actions.MergeAllWindows"/>
+                    class="cat.dcat.jbplug.mactabbing.actions.MergeAllWindows">
+                <keyboard-shortcut first-keystroke="control shift M" keymap="Mac OS X" replace-all="true"/>
+                <keyboard-shortcut first-keystroke="control shift M" keymap="Mac OS X 10.5+" replace-all="true"/>
+            </action>
             <action id="NativeTabbingToggleTabBar"
                     icon="AllIcons.General.ProjectTab"
-                    class="cat.dcat.jbplug.mactabbing.actions.ToggleTabBar"/>
+                    class="cat.dcat.jbplug.mactabbing.actions.ToggleTabBar">
+                <keyboard-shortcut first-keystroke="control shift T" keymap="Mac OS X" replace-all="true"/>
+                <keyboard-shortcut first-keystroke="control shift T" keymap="Mac OS X 10.5+" replace-all="true"/>
+            </action>
             <action id="NativeTabbingToggleTabOverview"
                     icon="AllIcons.General.ProjectStructure"
-                    class="cat.dcat.jbplug.mactabbing.actions.ToggleTabOverview"/>
+                    class="cat.dcat.jbplug.mactabbing.actions.ToggleTabOverview">
+                <keyboard-shortcut first-keystroke="alt TAB" keymap="Mac OS X" replace-all="true"/>
+                <keyboard-shortcut first-keystroke="alt TAB" keymap="Mac OS X 10.5+" replace-all="true"/>
+            </action>
         </group>
     </actions>
 </idea-plugin>

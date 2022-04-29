@@ -1,1 +1,1 @@
-rootProject.name = "Mac Tab Support"
+rootProject.name = "MacOS Tab Management"
